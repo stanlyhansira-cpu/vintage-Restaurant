@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="500" height="500" fill="#000000"/>
+
+  <g transform="translate(250, 165)">
+    <!-- Ornate Emblem Outer Pattern -->
+    <!-- Corner Loops -->
+    <path d="M -42,-42 C -75,-75 -100,-40 -100,0 C -100,40 -75,75 -42,42" fill="none" stroke="#F5B225" stroke-width="11" stroke-linecap="round"/>
+    <path d="M 42,-42 C 75,-75 100,-40 100,0 C 100,40 75,75 42,42" fill="none" stroke="#F5B225" stroke-width="11" stroke-linecap="round"/>
+    <path d="M -42,-42 C -75,-75 -40,-100 0,-100 C 40,-100 75,-75 42,-42" fill="none" stroke="#F5B225" stroke-width="11" stroke-linecap="round"/>
+    <path d="M -42,42 C -75,75 -40,100 0,100 C 40,100 75,75 42,42" fill="none" stroke="#F5B225" stroke-width="11" stroke-linecap="round"/>
+
+    <!-- Interlocking corner rounded loops -->
+    <rect x="-78" y="-78" width="156" height="156" rx="38" fill="none" stroke="#F5B225" stroke-width="11"/>
+    
+    <!-- Central rounded square frame -->
+    <rect x="-52" y="-52" width="104" height="104" rx="20" fill="none" stroke="#F5B225" stroke-width="11"/>
+
+    <!-- Golden 'V' glyph in center -->
+    <path d="M -30,-28 L -14,-28 L 0,18 L 14,-28 L 30,-28 L 8,30 L -8,30 Z" fill="#F5B225"/>
+    <rect x="-33" y="-28" width="8" height="4" fill="#F5B225"/>
+    <rect x="25" y="-28" width="8" height="4" fill="#F5B225"/>
+  </g>
+
+  <!-- Typography -->
+  <!-- "VINTAGE" -->
+  <text 
+    x="250" 
+    y="355" 
+    text-anchor="middle" 
+    fill="#F5B225" 
+    font-family="'Plus Jakarta Sans', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+    font-size="62" 
+    font-weight="900" 
+    letter-spacing="14"
+  >
+    VINTAGE
+  </text>
+
+  <!-- "RESTAURANT & CAFÈ" -->
+  <text 
+    x="250" 
+    y="405" 
+    text-anchor="middle" 
+    fill="#F5B225" 
+    font-family="'Plus Jakarta Sans', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+    font-size="22" 
+    font-weight="700" 
+    letter-spacing="9"
+  >
+    RESTAURANT &amp; CAFÈ
+  </text>
+</svg>

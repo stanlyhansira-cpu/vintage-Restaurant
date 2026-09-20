@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #12110f;
+  --bg-secondary: #1a1815;
+  --bg-card: #22201c;
+  --bg-card-hover: #2a2723;
+  --text-primary: #F6F3EE;
+  --text-secondary: #C3BAAF;
+  --text-muted: #857D74;
+  --accent-gold: #D4AF37;
+  --accent-gold-hover: #E2BF4D;
+  --accent-gold-muted: rgba(212, 175, 55, 0.12);
+  --border-subtle: rgba(212, 175, 55, 0.18);
+  --border-card: rgba(255, 255, 255, 0.08);
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+.font-serif-vintage {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #151412;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #343029;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C59A4E;
+}
+
+/* Printable Menu Styling */
+#printable-menu {
+  display: none;
+}
+
+@media print {
+  html, body {
+    background-color: #ffffff !important;
+    color: #111111 !important;
+    font-size: 10pt !important;
+    line-height: 1.35 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide interactive web UI */
+  header,
+  nav,
+  footer,
+  #promotional-banner,
+  #cart-drawer,
+  #sticky-mobile-cart-bar,
+  #toast-container,
+  #food-detail-modal,
+  #menu-section,
+  #print-menu-modal,
+  .no-print,
+  button,
+  .fixed,
+  .sticky {
+    display: none !important;
+  }
+
+  /* Display printable container cleanly */
+  #printable-menu {
+    display: block !important;
+    visibility: visible !important;
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 6mm 10mm !important;
+    background-color: #ffffff !important;
+    color: #111111 !important;
+  }
+
+  .print-avoid-break {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .print-category-block {
+    break-inside: auto;
+    page-break-inside: auto;
+    margin-bottom: 16px !important;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 8mm 10mm;
+  }
+}

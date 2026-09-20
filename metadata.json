@@ -1,0 +1,6 @@
+{
+  "name": "Vintage Restaurant & Cafe Gampaha",
+  "description": "Vintage Restaurant & Cafe Gampaha – Explore our menu and place your food order easily through WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
